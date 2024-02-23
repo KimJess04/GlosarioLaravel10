@@ -58,24 +58,6 @@ class TerminoController extends Controller
         $termino-> definicion = $request->input('descripcion');
         //$termino->imagen = $request->input('imagen');
        
-
-        // Redirecciona a una página de éxito o donde desees después de guardar
-        
-
-       
-       
-       
-       
-       //return redirect()->route('glosario.editFormat')->with('success', 'Término guardado correctamente.');
-
-
-         // Validar la solicitud
-    /*$request->validate([
-        'imagen' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Validar que sea una imagen
-    ]);
-
-    */
-
     // Condicion para verificar si se esta cargando la img del formulario
     if($request->hasFile('imagen')){
         // Obtener el archivo
@@ -89,7 +71,7 @@ class TerminoController extends Controller
         $termino->imagen = $destino.$fileName;
     }
     $termino->save(); //Guardar registro en la BD*/
-
+A
   /*  Termino::create($termino);
     return redirect()->route('glosario.index');*/
 
